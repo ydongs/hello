@@ -42,6 +42,6 @@ cmake -G Ninja .. \
 cmake --build . --target hello-opt
 
 # test run
-
+cd ..
 ./build/bin/hello-opt ./test/Hello/print.mlir > print.ll
 $BUILD_DIR/bin/lli print.ll
